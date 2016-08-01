@@ -65,7 +65,7 @@ class Rating extends Component {
           onClick={(e) => this.removeRow(e, key)}>
           x
         </button>
-        <div className="number">{rating}</div>
+        <div className="number">{key + 1}</div>
         {blocks}
       </div>
     );
