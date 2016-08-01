@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Image from './Image';
-import Info from './Info';
-import Rating from './Rating';
-import Export from './Export';
+import Image from '../Image/Image';
+import Info from '../Info/Info';
+import Rating from '../Rating/Rating';
+import Export from '../Export/Export';
 
 class App extends Component {
   render() {
