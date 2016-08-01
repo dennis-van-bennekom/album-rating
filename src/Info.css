@@ -1,0 +1,22 @@
+.Info input,
+.Info label {
+    display: block;
+}
+
+.Info input {
+    width: 100%;
+    padding-bottom: 0.25rem;
+
+    font-size: 1.3rem;
+
+    border: none;
+}
+
+.Info label {
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+
+
+    border-top: 4px solid #000;
+}

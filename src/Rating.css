@@ -1,0 +1,67 @@
+.Rating {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Rating .chart {
+    display: flex;
+    flex-direction: row;
+}
+
+.Rating .add-row {
+    align-self: flex-end;
+}
+
+.Rating .score {
+    display: flex;
+    margin-top: 2rem;
+    flex-basis: 100%;
+}
+
+.Rating .average {
+    font-size: 2rem;
+    height: 2rem;
+    margin-right: 4rem;
+
+    text-align: center;
+}
+
+.Rating .average input {
+    padding: 0;
+    margin: 0;
+    height: 2rem;
+    width: 6rem;
+    font-size: 2rem;
+    text-align: center;
+
+    border: none;
+}
+
+.Rating .average-label {
+    font-size: 0.9rem;
+    font-weight: 600;
+
+    border-top: 4px solid #000;
+}
+
+.Rating .column {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.Rating .column .fill,
+.Rating .column .empty {
+    width: 2rem;
+    height: 2rem;
+
+    border: 1px solid #000;
+}
+
+.Rating .column .fill {
+    background-color: #555;
+}
+
+.Rating .column .number {
+    margin-top: 0.25rem;
+    text-align: center;
+}

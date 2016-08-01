@@ -1,0 +1,40 @@
+.Image {
+    position: relative;
+}
+
+.Image img,
+.Image .upload,
+.Image input {
+    position: absolute;
+    display: block;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.Image .upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+
+    background: rgba(0, 0, 0, 0.9);
+    color: #fff;
+
+    transition: opacity 0.15s ease-in-out;
+}
+
+.Image.no-image .upload,
+.Image:hover .upload {
+    opacity: 1;
+}
+
+.Image input {
+    cursor: pointer;
+    opacity: 0;
+}
+
