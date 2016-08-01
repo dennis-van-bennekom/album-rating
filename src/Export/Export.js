@@ -9,7 +9,11 @@ class Export extends Component {
 
     document.body.classList.add('hide-buttons');
 
-    html2canvas(document.body, {
+    const $app = document.getElementsByClassName('App')[0];
+
+    html2canvas($app, {
+      width: $app.clientWidth,
+      height: $app.clientHeight,
       onrendered: function(canvas) {
         window.open(canvas.toDataURL('image/png'));
 
