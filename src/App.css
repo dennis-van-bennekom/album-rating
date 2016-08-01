@@ -24,6 +24,14 @@
   margin-top: 2rem;
 }
 
+.Export {
+  margin-top: 2rem;
+}
+
+.hide-buttons button {
+  display: none;
+}
+
 @media (max-width: 40rem) {
   .row {
     flex-direction: column;

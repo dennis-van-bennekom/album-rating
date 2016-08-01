@@ -4,6 +4,7 @@ import './App.css';
 import Image from './Image';
 import Info from './Info';
 import Rating from './Rating';
+import Export from './Export';
 
 class App extends Component {
   render() {
@@ -13,7 +14,12 @@ class App extends Component {
           <Image />
           <Info />
         </div>
-        <Rating />
+        <div className="row">
+          <Rating />
+        </div>
+        <div className="row">
+          <Export />
+        </div>
       </div>
     );
   }
