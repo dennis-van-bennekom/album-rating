@@ -7,9 +7,10 @@ class Export extends Component {
   export(e) {
     e.preventDefault();
 
-    document.body.classList.add('hide-buttons');
-
     const $app = document.getElementsByClassName('App')[0];
+    
+    document.body.classList.add('hide-buttons');
+    window.scrollTop(0, 0); // Make sure we capture everything
 
     html2canvas($app, {
       width: $app.clientWidth,
