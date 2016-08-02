@@ -12,15 +12,18 @@ class Export extends Component {
     document.body.classList.add('hide-buttons');
     window.scrollTo(0, 0); // Make sure we capture everything
 
-    html2canvas($app, {
-      width: $app.clientWidth,
-      height: $app.clientHeight,
-      onrendered: function(canvas) {
-        window.open(canvas.toDataURL('image/png'));
+    // Add a small timeout for mobile browsers
+    setTimeout(() => {
+      html2canvas($app, {
+        width: $app.clientWidth,
+        height: $app.clientHeight,
+        onrendered: function(canvas) {
+          window.open(canvas.toDataURL('image/png'));
 
-        document.body.classList.remove('hide-buttons');
-      }
-    });
+          document.body.classList.remove('hide-buttons');
+        }
+      });
+    }, 100);
   }
 
   render() {
